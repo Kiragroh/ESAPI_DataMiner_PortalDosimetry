@@ -309,7 +309,7 @@ namespace PDDataMining2
                         StringBuilder userLogCsvContent = new StringBuilder();
                         if (Directory.Exists(@"\\Network-Path"))
                         {
-                            userLogPath = @"\\variancom\daten\F?r Alle\Physik-Skripte\Output\PD-Mining\"+ System.DateTime.Now.ToString("yyyy-MM-dd") +"_PD-Mining.csv";
+                            userLogPath = @"\\Network-Path\PD-Mining\"+ System.DateTime.Now.ToString("yyyy-MM-dd") +"_PD-Mining.csv";
                         }
                         else
                         {
@@ -318,9 +318,7 @@ namespace PDDataMining2
 
 
                         // add headers if the file doesn't exist
-                        // list of target headers for desired dose stats
-                        // in this case I want to display the headers every time so i can verify which target the distance is being measured for
-                        // this is due to the inconsistency in target naming (PTV1/2 vs ptv45/79.2) -- these can be removed later when cleaning up the data
+                        
                         if (!File.Exists(userLogPath))
                         {
                             List<string> dataHeaderList = new List<string>();
@@ -385,22 +383,6 @@ namespace PDDataMining2
                         userStatsList.Add(averageDoseDifferenceRelResult == -1 ? "Error" : (averageDoseDifferenceRelResult == -2 ? "NoAnalysis" : (averageDoseDifferenceRelResult == -3 ? "SpecificFail" : averageDoseDifferenceRelResult.ToString().Replace(",", "."))));
                             userStatsList.Add(maxDoseDifferenceRel2Result == -1 ? "Error" : (maxDoseDifferenceRel2Result == -2 ? "NoAnalysis" : maxDoseDifferenceRel2Result.ToString().Replace(",", ".")));
                             userStatsList.Add(averageDoseDifferenceRel2Result == -1 ? "Error" : (averageDoseDifferenceRel2Result == -2 ? "NoAnalysis" : averageDoseDifferenceRel2Result.ToString().Replace(",", ".")));
-
-                            // userStatsList.Add(planId);
-                            //userStatsList.Add(course);
-                            /*
-                            var culture = new System.Globalization.CultureInfo("de-DE");
-                            var day2 = culture.DateTimeFormat.GetDayName(System.DateTime.Today.DayOfWeek);
-                            System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
-                            FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
-                            string version = fvi.FileVersion;
-                            string pc = Environment.MachineName.ToString();
-                            string domain = Environment.UserDomainName.ToString();
-                            string userId = Environment.UserName.ToString();
-                            string scriptId = "exRay-Helper";
-                            string date = System.DateTime.Now.ToString("yyyy-MM-dd");
-                            string dayOfWeek = day2;
-                            string time = string.Format("{0}:{1}", System.DateTime.Now.ToLocalTime().ToString("HH"), System.DateTime.Now.ToLocalTime().ToString("mm"));*/
 
                             string concatUserStats = string.Join(",", userStatsList.ToArray());
 

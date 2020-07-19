@@ -8,4 +8,4 @@ Installation notes:
 - VMS.CA.Scripting.dll
 - VMS.DV.PD.Scripting.dll
 
-2.) Change Network-Path. Otherwise your file will be created in Temp-Path
+2.) Change Network-Path in Line 310 and 312. Otherwise your file will be created in Temp-Path

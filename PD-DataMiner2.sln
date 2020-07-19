@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PD-DataMiner2", "PD-DataMiner2.csproj", "{C4229515-E8DD-4868-A2DD-9BEE8BE6362C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4229515-E8DD-4868-A2DD-9BEE8BE6362C}.Debug|x64.ActiveCfg = Debug|x64
+		{C4229515-E8DD-4868-A2DD-9BEE8BE6362C}.Debug|x64.Build.0 = Debug|x64
+		{C4229515-E8DD-4868-A2DD-9BEE8BE6362C}.Release|x64.ActiveCfg = Release|x64
+		{C4229515-E8DD-4868-A2DD-9BEE8BE6362C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36E0614F-257F-48FA-9346-69F878F9F50F}
+	EndGlobalSection
+EndGlobal

@@ -1,4 +1,4 @@
-# DataMiner_PortalDosimetryy
+# DataMiner_PortalDosimetry
 DataMine all analysed PortalDosimetry Fields and make custom evaluations too. Have Fun.
 
 Installation notes:

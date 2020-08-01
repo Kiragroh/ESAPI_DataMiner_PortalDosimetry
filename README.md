@@ -1,4 +1,5 @@
 # DataMiner_PortalDosimetry
+(Standalone-Console-App)
 Mine all analysed PortalDosimetry Fields and make custom evaluations too. Have Fun.
 
 Installation notes:

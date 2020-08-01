@@ -1,5 +1,5 @@
 # DataMiner_PortalDosimetry
-DataMine all analysed PortalDosimetry Fields and make custom evaluations too. Have Fun.
+Mine all analysed PortalDosimetry Fields and make custom evaluations too. Have Fun.
 
 Installation notes:
 

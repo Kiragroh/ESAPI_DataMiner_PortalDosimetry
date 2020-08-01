@@ -9,3 +9,6 @@ Installation notes:
 - VMS.DV.PD.Scripting.dll
 
 2.) Change Network-Path in Line 310 and 312 to your liking. Otherwise your file will be created in Temp-Path
+
+Note:
+- script is optimized to work with Eclipse 15.1

@@ -1,4 +1,8 @@
 # DataMiner_PortalDosimetry
+## General ESAPI Guidance
+
+For current build/runtime notes, clinical-safety reminders, stand-alone threading rules, write-enabled script governance, and ESAPI 18.x considerations, see [`docs/ESAPI_GENERAL_NOTES.md`](docs/ESAPI_GENERAL_NOTES.md).
+
 (Standalone-Console-App)
 Mine all analysed PortalDosimetry Fields and make custom evaluations too. Have Fun.
 
